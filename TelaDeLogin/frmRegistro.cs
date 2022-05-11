@@ -69,5 +69,10 @@ namespace TelaDeLogin
             new frmLogin().Show();
             this.Hide();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

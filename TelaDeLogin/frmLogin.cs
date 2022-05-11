@@ -42,5 +42,21 @@ namespace TelaDeLogin
             new frmRegister().Show();
             this.Hide();
         }
+
+        private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new frmMenu().Show();
+            this.Hide();
+        }
+
+        private void lblSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

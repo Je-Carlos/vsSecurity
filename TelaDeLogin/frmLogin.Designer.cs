@@ -38,11 +38,13 @@
             this.txtusername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblSair = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label5.Location = new System.Drawing.Point(133, 458);
             this.label5.Name = "label5";
@@ -85,6 +87,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // CheckbxShowPas
             // 
@@ -131,6 +134,7 @@
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(216, 28);
             this.txtusername.TabIndex = 14;
+            this.txtusername.TextChanged += new System.EventHandler(this.txtusername_TextChanged);
             // 
             // label2
             // 
@@ -152,12 +156,26 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Seguradora";
             // 
+            // lblSair
+            // 
+            this.lblSair.AutoSize = true;
+            this.lblSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSair.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSair.ForeColor = System.Drawing.Color.Red;
+            this.lblSair.Location = new System.Drawing.Point(147, 528);
+            this.lblSair.Name = "lblSair";
+            this.lblSair.Size = new System.Drawing.Size(31, 17);
+            this.lblSair.TabIndex = 25;
+            this.lblSair.Text = "Sair";
+            this.lblSair.Click += new System.EventHandler(this.lblSair_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(330, 554);
+            this.Controls.Add(this.lblSair);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
@@ -191,5 +209,6 @@
         private TextBox txtusername;
         private Label label2;
         private Label label1;
+        private Label lblSair;
     }
 }
