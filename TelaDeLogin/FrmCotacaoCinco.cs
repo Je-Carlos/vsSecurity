@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TelaDeLogin.modelo;
 
 namespace TelaDeLogin
 {
@@ -24,7 +25,17 @@ namespace TelaDeLogin
 
         private void label9_Click(object sender, EventArgs e)
         {
-
+            controle controle = new controle();
+            String mensagem = controle.cadastrarCpf(txbCpf.Text);
+            if (controle.temEnd) //mensagem de sucesso
+            {
+                MessageBox.Show("Um email será enviado para seu cadastro, Obrigado por cotar conosco!", "Finalização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem); //mensagem de erro
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)

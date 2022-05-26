@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeanc\\source\\repos\\TelaDeLogin\\TelaDeLogin\\TelaDeLogin.csproj": {}
+    "C:\\Users\\jeanc\\Documents\\banco pim\\teste\\TelaDeLogin\\TelaDeLogin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeanc\\source\\repos\\TelaDeLogin\\TelaDeLogin\\TelaDeLogin.csproj": {
+    "C:\\Users\\jeanc\\Documents\\banco pim\\teste\\TelaDeLogin\\TelaDeLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeanc\\source\\repos\\TelaDeLogin\\TelaDeLogin\\TelaDeLogin.csproj",
+        "projectUniqueName": "C:\\Users\\jeanc\\Documents\\banco pim\\teste\\TelaDeLogin\\TelaDeLogin.csproj",
         "projectName": "TelaDeLogin",
-        "projectPath": "C:\\Users\\jeanc\\source\\repos\\TelaDeLogin\\TelaDeLogin\\TelaDeLogin.csproj",
+        "projectPath": "C:\\Users\\jeanc\\Documents\\banco pim\\teste\\TelaDeLogin\\TelaDeLogin.csproj",
         "packagesPath": "C:\\Users\\jeanc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeanc\\source\\repos\\TelaDeLogin\\TelaDeLogin\\obj\\",
+        "outputPath": "C:\\Users\\jeanc\\Documents\\banco pim\\teste\\TelaDeLogin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
           "targetAlias": "net6.0-windows",
           "dependencies": {
             "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[6.0.4, )"
             }

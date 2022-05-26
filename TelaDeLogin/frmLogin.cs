@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
+using TelaDeLogin.modelo;
 
 namespace TelaDeLogin
 {
     public partial class frmLogin : Form
     {
+
         public frmLogin()
         {
             InitializeComponent();
+
         }
 
         private void CheckbxShowPas_CheckedChanged(object sender, EventArgs e)
@@ -50,8 +54,29 @@ namespace TelaDeLogin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new frmMenu().Show();
-            this.Hide();
+            
+
+            controle controle = new controle();
+            controle.acessar(txtusername.Text,txtPass.Text);
+            if (controle.mensagem.Equals(""))
+            {
+
+                if (controle.tem)
+                {
+                    MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    new frmMenu().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Login não encontrado, verifique login e senha", "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem);
+            }
+                                    
         }
 
         private void lblSair_Click(object sender, EventArgs e)

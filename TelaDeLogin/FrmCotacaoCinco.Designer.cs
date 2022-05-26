@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbCpf = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,19 +75,19 @@
             this.label4.TabIndex = 51;
             this.label4.Text = "Qual seu CPF?";
             // 
-            // textBox1
+            // txbCpf
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.LightBlue;
-            this.textBox1.Location = new System.Drawing.Point(57, 278);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 28);
-            this.textBox1.TabIndex = 52;
-            this.textBox1.Text = "CPF";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txbCpf.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbCpf.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbCpf.ForeColor = System.Drawing.Color.LightBlue;
+            this.txbCpf.Location = new System.Drawing.Point(57, 278);
+            this.txbCpf.Multiline = true;
+            this.txbCpf.Name = "txbCpf";
+            this.txbCpf.Size = new System.Drawing.Size(216, 28);
+            this.txbCpf.TabIndex = 52;
+            this.txbCpf.Text = "CPF";
+            this.txbCpf.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label6
             // 
@@ -176,7 +176,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbCpf);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -196,7 +196,7 @@
         private Label label1;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox txbCpf;
         private Label label6;
         private Label label2;
         private Label label5;

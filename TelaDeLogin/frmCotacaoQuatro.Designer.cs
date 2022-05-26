@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbCep = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,18 +72,19 @@
             this.label4.TabIndex = 51;
             this.label4.Text = "Qual seu endereço?";
             // 
-            // textBox2
+            // txbCep
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.LightBlue;
-            this.textBox2.Location = new System.Drawing.Point(63, 188);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 28);
-            this.textBox2.TabIndex = 52;
-            this.textBox2.Text = "CEP";
+            this.txbCep.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbCep.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbCep.ForeColor = System.Drawing.Color.LightBlue;
+            this.txbCep.Location = new System.Drawing.Point(63, 188);
+            this.txbCep.Multiline = true;
+            this.txbCep.Name = "txbCep";
+            this.txbCep.Size = new System.Drawing.Size(216, 28);
+            this.txbCep.TabIndex = 52;
+            this.txbCep.Text = "CEP";
+            this.txbCep.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label5
             // 
@@ -132,7 +133,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txbCep);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -152,7 +153,7 @@
         private Label label1;
         private Label label3;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox txbCep;
         private Label label5;
         private Label lblSair;
         private Label label2;

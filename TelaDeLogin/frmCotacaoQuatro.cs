@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
+using TelaDeLogin.modelo;
 
 namespace TelaDeLogin
 {
@@ -29,8 +31,18 @@ namespace TelaDeLogin
 
         private void label5_Click(object sender, EventArgs e)
         {
-            new FrmCotacaoCinco().Show();
-            this.Hide();
+            controle controle = new controle();
+            String mensagem = controle.cadastrarCep(txbCep.Text);
+            if (controle.temEnd) //mensagem de sucesso
+            {
+                new FrmCotacaoCinco().Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem); //mensagem de erro
+            }
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -43,6 +55,11 @@ namespace TelaDeLogin
         {
             new frmEndereco().Show();
             this.Hide();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

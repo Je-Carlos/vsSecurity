@@ -7,16 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
+using TelaDeLogin.modelo;
 
 namespace TelaDeLogin
 {
     public partial class frmRegister : Form
     {
+
         public frmRegister()
         {
             InitializeComponent();
-
-            
+         
         }
 
         private void frmRegister_Load(object sender, EventArgs e)
@@ -26,10 +28,18 @@ namespace TelaDeLogin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtusername.Text == "" && txtPassword.Text == "" && txtComPassword.Text == "")
+
+            controle controle = new controle();
+            String mensagem = controle.cadastrar(txtusername.Text, txtPass.Text, txtComPassword.Text);
+            if (controle.tem) //mensagem de sucesso
             {
-                MessageBox.Show("Nome de Usuário e Senha não estão preenchidos.", "Não foi possível registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(mensagem,"Cadastro",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
+            else
+            {
+                MessageBox.Show(controle.mensagem); //mensagem de erro
+            }
+ 
         }
 
         private void CheckbxShowPas_CheckedChanged(object sender, EventArgs e)
@@ -73,6 +83,11 @@ namespace TelaDeLogin
         private void label6_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

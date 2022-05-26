@@ -35,9 +35,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbAno = new System.Windows.Forms.TextBox();
+            this.txbModelo = new System.Windows.Forms.TextBox();
+            this.txbFabricante = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -115,38 +115,41 @@
             this.label6.TabIndex = 32;
             this.label6.Text = "Fabricante";
             // 
-            // txtusername
+            // txbAno
             // 
-            this.txtusername.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtusername.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtusername.Location = new System.Drawing.Point(65, 259);
-            this.txtusername.Multiline = true;
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(216, 28);
-            this.txtusername.TabIndex = 33;
+            this.txbAno.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbAno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbAno.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbAno.Location = new System.Drawing.Point(65, 259);
+            this.txbAno.Multiline = true;
+            this.txbAno.Name = "txbAno";
+            this.txbAno.Size = new System.Drawing.Size(216, 28);
+            this.txbAno.TabIndex = 33;
+            this.txbAno.TextChanged += new System.EventHandler(this.txbAno_TextChanged);
             // 
-            // textBox1
+            // txbModelo
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(65, 328);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 28);
-            this.textBox1.TabIndex = 34;
+            this.txbModelo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbModelo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbModelo.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbModelo.Location = new System.Drawing.Point(65, 328);
+            this.txbModelo.Multiline = true;
+            this.txbModelo.Name = "txbModelo";
+            this.txbModelo.Size = new System.Drawing.Size(216, 28);
+            this.txbModelo.TabIndex = 34;
+            this.txbModelo.TextChanged += new System.EventHandler(this.txbModelo_TextChanged);
             // 
-            // textBox2
+            // txbFabricante
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(65, 194);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 28);
-            this.textBox2.TabIndex = 35;
+            this.txbFabricante.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbFabricante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbFabricante.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbFabricante.Location = new System.Drawing.Point(65, 194);
+            this.txbFabricante.Multiline = true;
+            this.txbFabricante.Name = "txbFabricante";
+            this.txbFabricante.Size = new System.Drawing.Size(216, 28);
+            this.txbFabricante.TabIndex = 35;
+            this.txbFabricante.TextChanged += new System.EventHandler(this.txbFabricante_TextChanged);
             // 
             // label7
             // 
@@ -167,9 +170,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(330, 554);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtusername);
+            this.Controls.Add(this.txbFabricante);
+            this.Controls.Add(this.txbModelo);
+            this.Controls.Add(this.txbAno);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -197,9 +200,9 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox txtusername;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txbAno;
+        private TextBox txbModelo;
+        private TextBox txbFabricante;
         private Label label7;
     }
 }

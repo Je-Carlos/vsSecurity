@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TelaDeLogin.modelo;
 
 namespace TelaDeLogin
 {
@@ -19,8 +20,17 @@ namespace TelaDeLogin
 
         private void label2_Click(object sender, EventArgs e)
         {
-            new FrmCotacaoCinco().Show();
-            this.Hide();
+            controle controle = new controle();
+            String mensagem = controle.cadastrarEnd(txbRua.Text,txbNum.Text,txbBairro.Text,txbCid.Text);
+            if (controle.temEnd) //mensagem de sucesso
+            {
+                new FrmCotacaoCinco().Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem); //mensagem de erro
+            }
         }
 
         private void lblSair_Click(object sender, EventArgs e)

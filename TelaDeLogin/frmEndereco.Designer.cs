@@ -30,10 +30,10 @@
         {
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbRua = new System.Windows.Forms.TextBox();
+            this.txbNum = new System.Windows.Forms.TextBox();
+            this.txbBairro = new System.Windows.Forms.TextBox();
+            this.txbCid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
@@ -62,57 +62,57 @@
             this.label3.Text = "<";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox2
+            // txbRua
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.LightBlue;
-            this.textBox2.Location = new System.Drawing.Point(65, 161);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 28);
-            this.textBox2.TabIndex = 43;
-            this.textBox2.Text = "Rua / Avenida";
+            this.txbRua.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbRua.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbRua.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbRua.ForeColor = System.Drawing.Color.LightBlue;
+            this.txbRua.Location = new System.Drawing.Point(65, 161);
+            this.txbRua.Multiline = true;
+            this.txbRua.Name = "txbRua";
+            this.txbRua.Size = new System.Drawing.Size(216, 28);
+            this.txbRua.TabIndex = 43;
+            this.txbRua.Text = "Rua / Avenida";
             // 
-            // textBox1
+            // txbNum
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.LightBlue;
-            this.textBox1.Location = new System.Drawing.Point(65, 220);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 28);
-            this.textBox1.TabIndex = 44;
-            this.textBox1.Text = "Número";
+            this.txbNum.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbNum.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbNum.ForeColor = System.Drawing.Color.LightBlue;
+            this.txbNum.Location = new System.Drawing.Point(65, 220);
+            this.txbNum.Multiline = true;
+            this.txbNum.Name = "txbNum";
+            this.txbNum.Size = new System.Drawing.Size(216, 28);
+            this.txbNum.TabIndex = 44;
+            this.txbNum.Text = "Número";
             // 
-            // textBox3
+            // txbBairro
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.LightBlue;
-            this.textBox3.Location = new System.Drawing.Point(65, 282);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 28);
-            this.textBox3.TabIndex = 45;
-            this.textBox3.Text = "Bairro";
+            this.txbBairro.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbBairro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbBairro.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbBairro.ForeColor = System.Drawing.Color.LightBlue;
+            this.txbBairro.Location = new System.Drawing.Point(65, 282);
+            this.txbBairro.Multiline = true;
+            this.txbBairro.Name = "txbBairro";
+            this.txbBairro.Size = new System.Drawing.Size(216, 28);
+            this.txbBairro.TabIndex = 45;
+            this.txbBairro.Text = "Bairro";
             // 
-            // textBox4
+            // txbCid
             // 
-            this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.Color.LightBlue;
-            this.textBox4.Location = new System.Drawing.Point(65, 349);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 28);
-            this.textBox4.TabIndex = 46;
-            this.textBox4.Text = "Cidade";
+            this.txbCid.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbCid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbCid.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbCid.ForeColor = System.Drawing.Color.LightBlue;
+            this.txbCid.Location = new System.Drawing.Point(65, 349);
+            this.txbCid.Multiline = true;
+            this.txbCid.Name = "txbCid";
+            this.txbCid.Size = new System.Drawing.Size(216, 28);
+            this.txbCid.TabIndex = 46;
+            this.txbCid.Text = "Cidade";
             // 
             // label2
             // 
@@ -160,10 +160,10 @@
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txbCid);
+            this.Controls.Add(this.txbBairro);
+            this.Controls.Add(this.txbNum);
+            this.Controls.Add(this.txbRua);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -181,10 +181,10 @@
 
         private Label label4;
         private Label label3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txbRua;
+        private TextBox txbNum;
+        private TextBox txbBairro;
+        private TextBox txbCid;
         private Label label2;
         private Label label1;
         private Label lblSair;
