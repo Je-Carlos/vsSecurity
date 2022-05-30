@@ -34,6 +34,8 @@ namespace TelaDeLogin
             if (controle.tem) //mensagem de sucesso
             {
                 MessageBox.Show(mensagem,"Cadastro",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                new frmLogin().Show();
+                this.Hide();
             }
             else
             {

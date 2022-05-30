@@ -29,7 +29,7 @@ namespace TelaDeLogin
             String mensagem = controle.cadastrarCpf(txbCpf.Text);
             if (controle.temEnd) //mensagem de sucesso
             {
-                MessageBox.Show("Um email será enviado para seu cadastro, Obrigado por cotar conosco!", "Finalização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Enviaremos a cotação para seu e-mail cadastrado dentro de 5 dias úteis, Obrigado por cotar conosco!", "Finalização", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Application.Exit();
             }
             else
