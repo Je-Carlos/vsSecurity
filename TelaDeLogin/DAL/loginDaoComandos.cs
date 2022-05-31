@@ -88,13 +88,13 @@ namespace TelaDeLogin.DAL
                 cmd.Connection = con.Conectar();
                 cmd.ExecuteNonQuery();
                 con.desconectar();
-                this.mensagem = "Deu certo porra!";
+                this.mensagem = "Deu certo!";
                 temCarro = true;
             }
 
             catch (NpgsqlException)
             {
-                this.mensagem = "Erro com Banco de Dados";
+                this.mensagem = "Preencha todos os dados corretamente";
             }
             cmd.CommandText = "";
             return mensagem;
@@ -114,13 +114,13 @@ namespace TelaDeLogin.DAL
                 cmd.Connection = con.Conectar();
                 cmd.ExecuteNonQuery();
                 con.desconectar();
-                this.mensagem = "Deu certo porra!";
+                this.mensagem = "Deu certo!";
                 temEnd = true;
             }
 
             catch (NpgsqlException)
             {
-                this.mensagem = "Erro com Banco de Dados";
+                this.mensagem = "Preencha todos os dados corretamente";
             }
             cmd.CommandText = "";
             return mensagem;
@@ -142,13 +142,13 @@ namespace TelaDeLogin.DAL
                 cmd.Connection = con.Conectar();
                 cmd.ExecuteNonQuery();
                 con.desconectar();
-                this.mensagem = "Deu certo porra!";
+                this.mensagem = "Deu certo!";
                 temEnd = true;
             }
 
             catch (NpgsqlException)
             {
-                this.mensagem = "Erro com Banco de Dados";
+                this.mensagem = "Preencha todos os dados corretamente";
             }
             cmd.CommandText = "";
             return mensagem;
@@ -165,13 +165,13 @@ namespace TelaDeLogin.DAL
                 cmd.Connection = con.Conectar();
                 cmd.ExecuteNonQuery();
                 con.desconectar();
-                this.mensagem = "Deu certo porra!";
+                this.mensagem = "Deu certo!";
                 temEnd = true;
             }
 
             catch (NpgsqlException)
             {
-                this.mensagem = "Erro com Banco de Dados";
+                this.mensagem = "Preencha todos os dados corretamente";
             }
             cmd.CommandText = "";
             return mensagem;

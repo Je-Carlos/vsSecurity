@@ -81,9 +81,9 @@
             this.txbCep.Location = new System.Drawing.Point(63, 188);
             this.txbCep.Multiline = true;
             this.txbCep.Name = "txbCep";
+            this.txbCep.PlaceholderText = "CEP";
             this.txbCep.Size = new System.Drawing.Size(216, 28);
             this.txbCep.TabIndex = 52;
-            this.txbCep.Text = "CEP";
             this.txbCep.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label5

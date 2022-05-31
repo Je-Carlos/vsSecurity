@@ -71,9 +71,9 @@
             this.txbRua.Location = new System.Drawing.Point(65, 161);
             this.txbRua.Multiline = true;
             this.txbRua.Name = "txbRua";
+            this.txbRua.PlaceholderText = "Rua / Avenida";
             this.txbRua.Size = new System.Drawing.Size(216, 28);
             this.txbRua.TabIndex = 43;
-            this.txbRua.Text = "Rua / Avenida";
             // 
             // txbNum
             // 
@@ -84,9 +84,9 @@
             this.txbNum.Location = new System.Drawing.Point(65, 220);
             this.txbNum.Multiline = true;
             this.txbNum.Name = "txbNum";
+            this.txbNum.PlaceholderText = "Número";
             this.txbNum.Size = new System.Drawing.Size(216, 28);
             this.txbNum.TabIndex = 44;
-            this.txbNum.Text = "Número";
             // 
             // txbBairro
             // 
@@ -97,9 +97,9 @@
             this.txbBairro.Location = new System.Drawing.Point(65, 282);
             this.txbBairro.Multiline = true;
             this.txbBairro.Name = "txbBairro";
+            this.txbBairro.PlaceholderText = "Bairro";
             this.txbBairro.Size = new System.Drawing.Size(216, 28);
             this.txbBairro.TabIndex = 45;
-            this.txbBairro.Text = "Bairro";
             // 
             // txbCid
             // 
@@ -110,9 +110,9 @@
             this.txbCid.Location = new System.Drawing.Point(65, 349);
             this.txbCid.Multiline = true;
             this.txbCid.Name = "txbCid";
+            this.txbCid.PlaceholderText = "Cidade";
             this.txbCid.Size = new System.Drawing.Size(216, 28);
             this.txbCid.TabIndex = 46;
-            this.txbCid.Text = "Cidade";
             // 
             // label2
             // 

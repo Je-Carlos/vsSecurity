@@ -47,5 +47,11 @@ namespace TelaDeLogin
         {
             Application.Exit();
         }
+
+        private void lblSobNos_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Somos um pequeno grupo de 6 pessoas, juntos criamos a VsSecurity para atender suas necessidades!", "Sobre nós", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+        }
     }
 }

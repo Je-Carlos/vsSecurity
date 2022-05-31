@@ -84,9 +84,9 @@
             this.txbCpf.Location = new System.Drawing.Point(57, 278);
             this.txbCpf.Multiline = true;
             this.txbCpf.Name = "txbCpf";
+            this.txbCpf.PlaceholderText = "CPF";
             this.txbCpf.Size = new System.Drawing.Size(216, 28);
             this.txbCpf.TabIndex = 52;
-            this.txbCpf.Text = "CPF";
             this.txbCpf.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label6

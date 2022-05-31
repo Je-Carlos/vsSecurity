@@ -160,9 +160,9 @@
             this.textBox2.Location = new System.Drawing.Point(63, 440);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Eu uso o carro para...";
             this.textBox2.Size = new System.Drawing.Size(216, 28);
             this.textBox2.TabIndex = 41;
-            this.textBox2.Text = "Eu uso o carro para...";
             // 
             // label2
             // 

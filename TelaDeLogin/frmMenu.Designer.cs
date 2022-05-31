@@ -46,7 +46,7 @@
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(77, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 34);
+            this.label1.Size = new System.Drawing.Size(159, 27);
             this.label1.TabIndex = 13;
             this.label1.Text = "VS Security";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -58,7 +58,7 @@
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(168, 585);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 23);
+            this.label5.Size = new System.Drawing.Size(31, 17);
             this.label5.TabIndex = 24;
             this.label5.Text = "Sair";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -84,7 +84,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(67, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(244, 23);
+            this.label2.Size = new System.Drawing.Size(188, 17);
             this.label2.TabIndex = 25;
             this.label2.Text = "Seguro Auto com preço justo";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -94,7 +94,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(77, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 23);
+            this.label3.Size = new System.Drawing.Size(138, 17);
             this.label3.TabIndex = 26;
             this.label3.Text = "Cobertura na medida";
             // 
@@ -103,7 +103,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(77, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(253, 23);
+            this.label4.Size = new System.Drawing.Size(194, 17);
             this.label4.TabIndex = 27;
             this.label4.Text = "Sem carência e sem fidelidade";
             // 
@@ -112,7 +112,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(77, 259);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(203, 23);
+            this.label6.Size = new System.Drawing.Size(160, 17);
             this.label6.TabIndex = 28;
             this.label6.Text = "Pague menos mês a mês";
             // 
@@ -124,7 +124,7 @@
             this.lblSair.ForeColor = System.Drawing.Color.Red;
             this.lblSair.Location = new System.Drawing.Point(150, 528);
             this.lblSair.Name = "lblSair";
-            this.lblSair.Size = new System.Drawing.Size(41, 23);
+            this.lblSair.Size = new System.Drawing.Size(31, 17);
             this.lblSair.TabIndex = 29;
             this.lblSair.Text = "Sair";
             this.lblSair.Click += new System.EventHandler(this.label7_Click);
@@ -132,6 +132,7 @@
             // lblSobNos
             // 
             this.lblSobNos.BackColor = System.Drawing.Color.White;
+            this.lblSobNos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSobNos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSobNos.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblSobNos.Location = new System.Drawing.Point(64, 417);
@@ -140,10 +141,11 @@
             this.lblSobNos.TabIndex = 30;
             this.lblSobNos.Text = "Sobre nós";
             this.lblSobNos.UseVisualStyleBackColor = false;
+            this.lblSobNos.Click += new System.EventHandler(this.lblSobNos_Click);
             // 
             // frmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(352, 554);
